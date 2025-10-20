@@ -15,6 +15,7 @@ public class OSCReceiverTest : MonoBehaviour
 
     private OSCReceiver receiver;
 
+
     private string lastCard = "";
 
     void Start()
@@ -22,14 +23,18 @@ public class OSCReceiverTest : MonoBehaviour
         receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = port;
 
+
         // Code de chaque carte RFID
+
         receiver.Bind("/A19EBB5", OnCard_A19EBB5);
         receiver.Bind("/9320076", OnCard_9320076);
         receiver.Bind("/8CEC54E", OnCard_8CEC54E);
         receiver.Bind("/854E4F5", OnCard_854E4F5);
         receiver.Bind("/88324E2", OnCard_88324E2);
 
+
        
+
 
       
     }
