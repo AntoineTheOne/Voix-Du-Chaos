@@ -637,6 +637,7 @@ GameObject:
   - component: {fileID: 1076221341}
   - component: {fileID: 1076221340}
   - component: {fileID: 1076221342}
+  - component: {fileID: 1076221343}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -706,6 +707,24 @@ MonoBehaviour:
   characterController: {fileID: 1076221340}
   mainCamera: {fileID: 330585545}
   playerInputHandler: {fileID: 261961351}
+--- !u!114 &1076221343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076221339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ff2482e3aab04499cc73f1a5722edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bouleDeFeu: {fileID: 431011376596560119, guid: 8ab8d724696dc124aaeabc30936f2091, type: 3}
+  bouleDEau: {fileID: 884909273073161747, guid: 3b6b6efa3e016254188dc45ae540d4ce, type: 3}
+  bouleDeTerre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
+  projectileSpawnDistance: 2
+  wallSpawnDistance: 5
+  projectileSpeed: 10
 --- !u!1 &1141086662
 GameObject:
   m_ObjectHideFlags: 0
