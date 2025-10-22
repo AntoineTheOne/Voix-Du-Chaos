@@ -53,7 +53,8 @@ public class OSCReceiverTest : MonoBehaviour
     void OnCard_A19EBB5(OSCMessage message)
     {
         if (!CanTrigger("A19EBB5")) return;
-        Debug.Log("A19EBB5 - Carte Reset");
+        Instantiate(terre, spawner2.position, spawner2.rotation);
+        Debug.Log("A19EBB5");
     }
 
     void OnCard_9320076(OSCMessage message)
