@@ -32,11 +32,7 @@ public class OSCReceiverTest : MonoBehaviour
         receiver.Bind("/854E4F5", OnCard_854E4F5);
         receiver.Bind("/88324E2", OnCard_88324E2);
 
-
-       
-
-
-      
+        
     }
 
     
@@ -51,7 +47,7 @@ public class OSCReceiverTest : MonoBehaviour
     }
 
     void OnCard_A19EBB5(OSCMessage message)
-    {
+    {      
         if (!CanTrigger("A19EBB5")) return;
         Instantiate(terre, spawner2.position, spawner2.rotation);
         Debug.Log("A19EBB5");
