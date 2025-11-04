@@ -154,7 +154,7 @@ MonoBehaviour:
   feu: {fileID: 431011376596560119, guid: 8ab8d724696dc124aaeabc30936f2091, type: 3}
   vent: {fileID: 8793751659751409372, guid: 4cf3ca6f643601c4d8bac125c5c73121, type: 3}
   terre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
-  cooldown: 3
+  cooldown: 2
 --- !u!4 &75463491
 Transform:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 1188334871}
   - component: {fileID: 1188334870}
   m_Layer: 0
-  m_Name: OSC_Spawner2 (1)
+  m_Name: OSC_Spawner4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,13 +483,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7005b529730f1445960b9909d0f24b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: 9001
+  port: 9003
   spawner: {fileID: 837743975}
   eau: {fileID: 884909273073161747, guid: 3b6b6efa3e016254188dc45ae540d4ce, type: 3}
   feu: {fileID: 431011376596560119, guid: 8ab8d724696dc124aaeabc30936f2091, type: 3}
   vent: {fileID: 8793751659751409372, guid: 4cf3ca6f643601c4d8bac125c5c73121, type: 3}
   terre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
-  cooldown: 3
+  cooldown: 2
 --- !u!4 &1188334871
 Transform:
   m_ObjectHideFlags: 0
@@ -571,7 +571,7 @@ MonoBehaviour:
   feu: {fileID: 431011376596560119, guid: 8ab8d724696dc124aaeabc30936f2091, type: 3}
   vent: {fileID: 8793751659751409372, guid: 4cf3ca6f643601c4d8bac125c5c73121, type: 3}
   terre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
-  cooldown: 3
+  cooldown: 2
 --- !u!4 &1654050228
 Transform:
   m_ObjectHideFlags: 0
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 1761440182}
   - component: {fileID: 1761440181}
   m_Layer: 0
-  m_Name: OSC_Spawner3 (1)
+  m_Name: OSC_Spawner5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
