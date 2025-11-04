@@ -17,8 +17,6 @@ public class OSCReceiverTest : MonoBehaviour
     private OSCReceiver receiver;
 
 
-    private string lastCard = "";
-
     void Start()
     {
         receiver = gameObject.AddComponent<OSCReceiver>();
