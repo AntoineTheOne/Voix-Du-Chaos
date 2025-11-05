@@ -184,7 +184,7 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 5
+  attackCooldown: 0.1
   projectileSpeed: 25
   engagementRange: 10
 --- !u!1 &8823914048999334972
