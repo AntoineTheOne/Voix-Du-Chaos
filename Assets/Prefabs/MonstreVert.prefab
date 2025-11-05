@@ -76,9 +76,8 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 2
-  forwardShotForce: 10
-  verticalShotForce: 5
+  attackCooldown: 5
+  projectileSpeed: 25
   engagementRange: 10
 --- !u!1 &3929138497512061304
 GameObject:

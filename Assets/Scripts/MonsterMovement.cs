@@ -16,7 +16,7 @@ public class MonsterMovement : MonoBehaviour
     [Header("Combat Settings")]
     [SerializeField] private float attackCooldown = 1f;
     private bool isOnAttackCooldown;
-    [SerializeField] private float forwardShotForce = 20f;
+    [SerializeField] private float projectileSpeed = 25f; 
 
     [Header("Detection Ranges")]
     [SerializeField] private float engagementRange = 10f;
@@ -25,9 +25,10 @@ public class MonsterMovement : MonoBehaviour
 
     private void Awake()
     {
+        
         if (playerTransform == null)
         {
-            GameObject playerObject = GameObject.Find("Player");
+            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
             if (playerObject != null)
                 playerTransform = playerObject.transform;
         }
@@ -57,18 +58,18 @@ public class MonsterMovement : MonoBehaviour
     {
         if (projectilePrefab == null || firePoint == null || playerTransform == null) return;
 
-        // Le firePoint regarde directement vers le joueur (légère correction de hauteur si besoin)
-        Vector3 targetPos = playerTransform.position + Vector3.up * 1.0f; // ajuste 1.0f si nécessaire
-        firePoint.LookAt(targetPos);
+        // Le firePoint regarde vers le joueur (ajuste légèrement la hauteur)
+        Vector3 targetPosistion = playerTransform.position + Vector3.up * 1.0f;
+        firePoint.LookAt(targetPosistion);
+        GameObject projectileInstance = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        Rigidbody projectileRb = projectileInstance.GetComponent<Rigidbody>();
+        Vector3 direction = (targetPosistion - firePoint.position).normalized;
 
-        // Instancie le projectile orienté dans la direction du firePoint
-        Rigidbody projectileRb = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation)
-            .GetComponent<Rigidbody>();
+        //donne une vitesse constante au projectile
+        projectileRb.linearVelocity = direction * projectileSpeed;
 
-        // Lancer du projectile (aucune force verticale)
-        projectileRb.AddForce(firePoint.forward * forwardShotForce, ForceMode.Impulse);
-
-        Destroy(projectileRb.gameObject, 3f);
+        // détruit le projectile après 3 secondes
+        Destroy(projectileInstance, 3f);
     }
 
     private IEnumerator AttackCooldownRoutine()
@@ -87,11 +88,9 @@ public class MonsterMovement : MonoBehaviour
     private void PerformAttack()
     {
         navAgent.SetDestination(transform.position);
-
-        // Le monstre regarde seulement horizontalement vers le joueur
-        Vector3 lookPos = playerTransform.position;
-        lookPos.y = transform.position.y;
-        transform.LookAt(lookPos);
+        Vector3 lookPosition = playerTransform.position;
+        lookPosition.y = transform.position.y;
+        transform.LookAt(lookPosition);
 
         if (!isOnAttackCooldown)
         {
@@ -102,7 +101,6 @@ public class MonsterMovement : MonoBehaviour
 
     private void UpdateBehaviourState()
     {
-        if (playerTransform == null) return;
 
         if (isPlayerInRange)
             PerformAttack();
