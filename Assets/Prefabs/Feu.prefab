@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 783112575011967889}
   - component: {fileID: 6081922821492284789}
   - component: {fileID: -3297995142258064974}
+  - component: {fileID: 1517440303697945921}
   m_Layer: 0
   m_Name: Feu
   m_TagString: Untagged
@@ -136,3 +137,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1517440303697945921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431011376596560119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsInfos: {fileID: 11400000, guid: 361086b735d4cf44eac353d7695d10f3, type: 2}

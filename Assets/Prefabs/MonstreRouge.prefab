@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3204655846687083311}
   - component: {fileID: 3354388955705918655}
   - component: {fileID: 8829522534275571579}
+  - component: {fileID: 2910014873526564725}
   m_Layer: 0
-  m_Name: singeMonstreVert
+  m_Name: singeMonstreRouge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,6 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.027497757, y: 0.024252258, z: 0.029929461}
   m_Center: {x: -0.00007700315, y: 0.0013277612, z: 0.0051209824}
+--- !u!114 &2910014873526564725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351999487404747265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbccbd2d95b63342b0a60d39c2ea251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterInfos: {fileID: 11400000, guid: 90aa7b01e5569a944a12cabfeb7fd46d, type: 2}
 --- !u!1 &7990786790100370677
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +166,7 @@ GameObject:
   - component: {fileID: 9056831343649628656}
   m_Layer: 0
   m_Name: MonstreRouge
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +229,6 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 0.1
+  attackCooldown: 2
   projectileSpeed: 25
   engagementRange: 10

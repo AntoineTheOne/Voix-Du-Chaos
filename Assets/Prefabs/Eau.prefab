@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5258417094539940587}
   - component: {fileID: 4732452274887985232}
   - component: {fileID: -6559183103272157322}
+  - component: {fileID: 3072792456322169789}
   m_Layer: 0
   m_Name: Eau
   m_TagString: Untagged
@@ -138,3 +139,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3072792456322169789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884909273073161747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsInfos: {fileID: 11400000, guid: 1491bf5392a55c248b7e406544cae0b6, type: 2}

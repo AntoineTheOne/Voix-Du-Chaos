@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 255542665741682068}
   - component: {fileID: 2511068986615221999}
   - component: {fileID: -112483891949156055}
+  - component: {fileID: 7772697595776948353}
   m_Layer: 0
   m_Name: Terre
   m_TagString: Untagged
@@ -138,3 +139,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7772697595776948353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656024885023217483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsInfos: {fileID: 11400000, guid: a5c06263e3fe19645ac319fd640c0ec2, type: 2}
