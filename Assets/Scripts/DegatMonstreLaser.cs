@@ -10,7 +10,7 @@ public class DegatMonstreLaser : MonoBehaviour
     {
         nbDeDommage = spellsInfos.nombreDeDegat;
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
       Destroy(gameObject, 5f);
       MonsterHpLoss vieEnnemi = other.GetComponent<MonsterHpLoss>();
