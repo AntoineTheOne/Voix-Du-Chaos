@@ -323,7 +323,7 @@ MonoBehaviour:
   bouleDeFeu: {fileID: 8979301690953928734, guid: 1eb6649ba9f109b4d98a207cc5062ebe, type: 3}
   tornado: {fileID: 7173611732960866156, guid: eacbcc0e513d2e243aeeebadfec8dfbc, type: 3}
   piqueTerre: {fileID: 5284914369338829057, guid: 13ae7c08ecc3b1e44b028dff85a26e72, type: 3}
-  bouclier: {fileID: 2537920346157708082, guid: a27d82fa7d467a647855e3bf044d738a, type: 3}
+  bouclier: {fileID: 7788711585442247967, guid: a27d82fa7d467a647855e3bf044d738a, type: 3}
   laser: {fileID: 4006747154646512780, guid: e16dc81c8a0a08546a074b5096ec70ea, type: 3}
   lifeTime: 5
   projectileSpawnDistance: 2
