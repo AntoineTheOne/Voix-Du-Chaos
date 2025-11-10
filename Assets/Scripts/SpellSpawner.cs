@@ -11,8 +11,11 @@ public class SpellSpawner : MonoBehaviour
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
     [SerializeField] private GameObject bouleDeFeu;
-    [SerializeField] private GameObject bouleDEau;
-    [SerializeField] private GameObject bouleDeTerre;
+    [SerializeField] private GameObject tornado;
+    [SerializeField] private GameObject piqueTerre;
+    [SerializeField] private GameObject bouclier;
+    [SerializeField] private GameObject laser;
+    [SerializeField] private float lifeTime = 5f;
     
     [SerializeField] private float projectileSpawnDistance = 2f;
     [SerializeField] private float wallSpawnDistance = 5f;
@@ -21,9 +24,12 @@ public class SpellSpawner : MonoBehaviour
 
     void Start()
     {
-        actions.Add("boule de feu", Feu);
-        actions.Add("boule d'eau", Eau);
-        actions.Add("boule de terre", Terre);
+        actions.Add("boule de feu", BouleFeu);
+        actions.Add("tornado", Tornado);
+        actions.Add("pique de terre", PiqueTerre);
+        actions.Add("laser électrique", Laser);
+        actions.Add("laser", Laser);
+        actions.Add("bouclier", Bouclier);
 
 
 
@@ -41,7 +47,7 @@ public class SpellSpawner : MonoBehaviour
     }
 
 
-    private void Feu()
+    private void BouleFeu()
     {
         Vector3 spawnPosition = transform.position + transform.forward * projectileSpawnDistance;
         GameObject projectile = Instantiate(bouleDeFeu, spawnPosition, Quaternion.identity);
@@ -50,28 +56,38 @@ public class SpellSpawner : MonoBehaviour
         {
             rb.linearVelocity = transform.forward * projectileSpeed;
         }
+        Destroy(projectile, lifeTime);
     }
 
-    private void Eau()
+    private void Tornado()
     {
-        Vector3 spawnPosition = transform.position + transform.forward * projectileSpawnDistance;
-        GameObject projectile = Instantiate(bouleDEau, spawnPosition, Quaternion.identity);
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.linearVelocity = transform.forward * projectileSpeed;
-        }
+        Vector3 spawnPosition = transform.position + transform.forward * wallSpawnDistance;
+        Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
+        GameObject projectile = Instantiate(tornado, spawnPosition, wallRotation);
+        Destroy(projectile, lifeTime);
     }
 
-    private void Terre()
+    private void PiqueTerre()
     {
-        Vector3 spawnPosition = transform.position + transform.forward * projectileSpawnDistance;
-        GameObject projectile = Instantiate(bouleDeTerre, spawnPosition, Quaternion.identity);
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.linearVelocity = transform.forward * projectileSpeed;
-        }
+       Vector3 spawnPosition = transform.position + transform.forward * wallSpawnDistance;
+        Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
+        GameObject projectile = Instantiate(piqueTerre, spawnPosition, wallRotation);
+        Destroy(projectile, lifeTime);
+    }
+    private void Laser()
+    {
+       Vector3 spawnPosition = transform.position + transform.forward * wallSpawnDistance;
+        Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
+        GameObject projectile = Instantiate(laser, spawnPosition, wallRotation);
+        Destroy(projectile, lifeTime);
+        
+    }
+    private void Bouclier()
+    {
+        Vector3 spawnPosition = transform.position + transform.forward * wallSpawnDistance;
+        Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
+        GameObject projectile = Instantiate(bouclier, spawnPosition, wallRotation);
+        Destroy(projectile, lifeTime);
     }
     
     

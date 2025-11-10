@@ -351,9 +351,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ff2482e3aab04499cc73f1a5722edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bouleDeFeu: {fileID: 431011376596560119, guid: 8ab8d724696dc124aaeabc30936f2091, type: 3}
-  bouleDEau: {fileID: 884909273073161747, guid: 3b6b6efa3e016254188dc45ae540d4ce, type: 3}
-  bouleDeTerre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
+  bouleDeFeu: {fileID: 8979301690953928734, guid: 1eb6649ba9f109b4d98a207cc5062ebe, type: 3}
+  tornado: {fileID: 7173611732960866156, guid: eacbcc0e513d2e243aeeebadfec8dfbc, type: 3}
+  piqueTerre: {fileID: 5284914369338829057, guid: 13ae7c08ecc3b1e44b028dff85a26e72, type: 3}
+  bouclier: {fileID: 2537920346157708082, guid: a27d82fa7d467a647855e3bf044d738a, type: 3}
+  laser: {fileID: 5737642350637307817, guid: e16dc81c8a0a08546a074b5096ec70ea, type: 3}
+  lifeTime: 5
   projectileSpawnDistance: 2
   wallSpawnDistance: 5
   projectileSpeed: 10
