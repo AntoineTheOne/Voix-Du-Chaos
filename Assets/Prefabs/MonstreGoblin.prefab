@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1314341498179207974}
   - component: {fileID: 3782044400270977087}
   m_Layer: 0
-  m_Name: MonstreVert
+  m_Name: MonstreGoblin
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
   navAgent: {fileID: 0}
   playerTransform: {fileID: 0}
   firePoint: {fileID: 2707362361826063837}
-  projectilePrefab: {fileID: 884909273073161747, guid: 3b6b6efa3e016254188dc45ae540d4ce, type: 3}
+  projectilePrefab: {fileID: 5076895845023151809, guid: 31a8afa539df76b4b911957a417e57d7, type: 3}
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 7513506398680848264}
   - component: {fileID: 6699506784815423240}
   m_Layer: 0
-  m_Name: singeMonstreVert
+  m_Name: singeMonstreGoblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

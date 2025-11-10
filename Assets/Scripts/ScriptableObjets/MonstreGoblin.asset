@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7eabde9885f7cd49b15cd775ae8d7bc, type: 3}
-  m_Name: MonstreBleu
+  m_Name: MonstreGoblin
   m_EditorClassIdentifier: 
   nombreDeVie: 10

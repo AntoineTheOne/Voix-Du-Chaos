@@ -67,6 +67,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5014040256967663504, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6283648425433295832}
+    - targetCorrespondingSourceObject: {fileID: 5014040256967663504, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1275937129418862562}
+    - targetCorrespondingSourceObject: {fileID: 5014040256967663504, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6766488275268320122}
   m_SourcePrefab: {fileID: 100100000, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
 --- !u!1 &7173611732960866156 stripped
 GameObject:
@@ -94,3 +100,43 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2729406, y: 8.420936, z: 4.5269604}
   m_Center: {x: 0, y: 3.2297816, z: 0}
+--- !u!114 &-1275937129418862562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173611732960866156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsInfos: {fileID: 11400000, guid: 8926d525405f7d9459ab3dc3c98b597e, type: 2}
+--- !u!54 &-6766488275268320122
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173611732960866156}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

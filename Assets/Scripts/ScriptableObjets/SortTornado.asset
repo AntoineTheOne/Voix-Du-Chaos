@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd9dc4ba643b417418acf8e46b64c6c5, type: 3}
-  m_Name: BouleDeFeu
+  m_Name: SortTornado
   m_EditorClassIdentifier: 
-  nombreDeDegat: 15
+  nombreDeDegat: 100
