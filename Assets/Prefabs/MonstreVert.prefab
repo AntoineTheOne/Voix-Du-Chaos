@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3782044400270977087}
   m_Layer: 0
   m_Name: MonstreVert
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 0.1
+  attackCooldown: 3
   projectileSpeed: 25
   engagementRange: 10
 --- !u!1 &3929138497512061304
@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 6984631902904105002}
   - component: {fileID: 23931158267250504}
   - component: {fileID: 7513506398680848264}
+  - component: {fileID: 6699506784815423240}
   m_Layer: 0
   m_Name: singeMonstreVert
   m_TagString: Untagged
@@ -218,3 +219,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.027497757, y: 0.024252258, z: 0.029929461}
   m_Center: {x: -0.00007700315, y: 0.0013277612, z: 0.0051209824}
+--- !u!114 &6699506784815423240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320879360505598219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbccbd2d95b63342b0a60d39c2ea251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterInfos: {fileID: 11400000, guid: 1a44968053a5ee84cb345b58713a44c6, type: 2}

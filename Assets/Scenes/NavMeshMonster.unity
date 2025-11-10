@@ -605,7 +605,7 @@ MonoBehaviour:
   bouleDeTerre: {fileID: 656024885023217483, guid: 463cb230abd265844aa2732f2efcd607, type: 3}
   projectileSpawnDistance: 2
   wallSpawnDistance: 5
-  projectileSpeed: 10
+  projectileSpeed: 30
 --- !u!114 &1660522399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,6 +845,10 @@ PrefabInstance:
     - target: {fileID: 7636808288610863214, guid: 31819bb0c563f6f4cb15e632aa3aad13, type: 3}
       propertyPath: m_Name
       value: MonstreBleu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636808288610863214, guid: 31819bb0c563f6f4cb15e632aa3aad13, type: 3}
+      propertyPath: m_TagString
+      value: Monster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
