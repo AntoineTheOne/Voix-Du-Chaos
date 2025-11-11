@@ -24,6 +24,7 @@ public class SpellSpawner : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(PhraseRecognitionSystem.isSupported);
         actions.Add("boule de feu", BouleFeu);
         actions.Add("tornado", Tornado);
         actions.Add("pique de terre", PiqueTerre);
