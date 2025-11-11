@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SceneDemonstrationVoix.unity
     guid: 20323552b1e94415fa6bd7ee8aeadbdc
+  - enabled: 1
+    path: Assets/Scenes/SceneDepart.unity
+    guid: 344b647f6b59b554eb5abe477b69289a
+  - enabled: 1
+    path: Assets/Scenes/Prototype-Sprint-2.unity
+    guid: b6b8ea9c8574dcd4f87405f5ce6e5ee2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
