@@ -11599,7 +11599,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.14
     m_Space: -1
   m_Property:
     name: Delay
@@ -17370,7 +17370,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.17
     m_Space: -1
   m_Property:
     name: Delay
@@ -20805,7 +20805,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.44
     m_Space: -1
   m_Property:
     name: Delay
@@ -24960,7 +24960,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.68
     m_Space: -1
   m_Property:
     name: Delay
@@ -29115,7 +29115,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 1.41
     m_Space: -1
   m_Property:
     name: Delay
@@ -34264,7 +34264,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.44
     m_Space: -1
   m_Property:
     name: Delay
@@ -37198,7 +37198,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.68
     m_Space: -1
   m_Property:
     name: Delay
@@ -40132,7 +40132,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 1.41
     m_Space: -1
   m_Property:
     name: Delay
