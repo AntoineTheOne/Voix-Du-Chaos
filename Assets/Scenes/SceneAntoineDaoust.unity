@@ -398,11 +398,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1490017972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae37fb917049c1e4e8c86ab1a625695a, type: 3}
+  m_Script: {fileID: 11500000, guid: 39ff2482e3aab04499cc73f1a5722edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transmitter: {fileID: 1490017974}
   spell: {fileID: 0}
+  bouleDeFeu: {fileID: 0}
+  tornado: {fileID: 0}
+  piqueTerre: {fileID: 0}
+  bouclier: {fileID: 0}
+  laser: {fileID: 0}
+  lifeTime: 5
+  projectileSpawnDistance: 2
+  wallSpawnDistance: 5
+  projectileSpeed: 10
+  index: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

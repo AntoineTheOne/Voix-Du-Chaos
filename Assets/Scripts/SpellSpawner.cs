@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using extOSC;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 
 public class SpellSpawner : MonoBehaviour
 {
+    public OSCTransmitter transmitter;
+
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
@@ -21,6 +24,8 @@ public class SpellSpawner : MonoBehaviour
     [SerializeField] private float wallSpawnDistance = 5f;
     [SerializeField] private float projectileSpeed = 10f;
 
+    [SerializeField] private float index = 10f;
+    private float timer = 0f;
 
     void Start()
     {
@@ -40,6 +45,24 @@ public class SpellSpawner : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        OSCMessage message = new OSCMessage("/unity/value");
+        message.AddValue(OSCValue.Float(index)); // envoie un float
+ 
+        Debug.Log(message);
+        transmitter.Send(message);
+
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0)
+        {
+            index = 10f;
+        }
+        Debug.Log(timer);
+    }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)
     {
@@ -58,6 +81,8 @@ public class SpellSpawner : MonoBehaviour
             rb.linearVelocity = transform.forward * projectileSpeed;
         }
         Destroy(projectile, lifeTime);
+        index = 0.5f;
+        timer = 1.5f;
     }
 
     private void Tornado()
@@ -66,6 +91,8 @@ public class SpellSpawner : MonoBehaviour
         Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
         GameObject projectile = Instantiate(tornado, spawnPosition, wallRotation);
         Destroy(projectile, lifeTime);
+        index = 1.5f;
+        timer = 1.5f;
     }
 
     private void PiqueTerre()
@@ -74,6 +101,8 @@ public class SpellSpawner : MonoBehaviour
         Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
         GameObject projectile = Instantiate(piqueTerre, spawnPosition, wallRotation);
         Destroy(projectile, lifeTime);
+        index = 2.5f;
+        timer = 1.5f;
     }
     private void Laser()
     {
@@ -81,7 +110,8 @@ public class SpellSpawner : MonoBehaviour
         Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
         GameObject projectile = Instantiate(laser, spawnPosition, wallRotation);
         Destroy(projectile, lifeTime);
-        
+        index = 3.5f;
+        timer = 1.5f;
     }
     private void Bouclier()
     {
@@ -89,6 +119,8 @@ public class SpellSpawner : MonoBehaviour
         Quaternion wallRotation = Quaternion.LookRotation(transform.forward);
         GameObject projectile = Instantiate(bouclier, spawnPosition, wallRotation);
         Destroy(projectile, lifeTime);
+        index = 4.5f;
+        timer = 1.5f;
     }
     
     
