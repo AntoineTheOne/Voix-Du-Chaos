@@ -55,6 +55,9 @@ public class OSCReceiverTest : MonoBehaviour
                 Instantiate(PrefabAssassin, spawner.position, spawner.rotation);
                 Debug.Log("A19EBB5");
                 timer = cooldown;
+                monsterManager.nbMonstreApparu += 1;
+                Debug.Log(monsterManager.nbMonstreApparu);
+
             }
         }
     }
@@ -68,6 +71,8 @@ public class OSCReceiverTest : MonoBehaviour
                 Instantiate(PrefabGoblin, spawner.position, spawner.rotation);
                 Debug.Log("9320076"); 
                 timer = cooldown;
+                monsterManager.nbMonstreApparu += 1;
+                Debug.Log(monsterManager.nbMonstreApparu);
             }
         } 
     }
@@ -81,6 +86,8 @@ public class OSCReceiverTest : MonoBehaviour
                 Instantiate(PrefabGolem, spawner.position, spawner.rotation);
                 Debug.Log("8CEC54E");
                 timer = cooldown;
+                monsterManager.nbMonstreApparu += 1;
+                Debug.Log(monsterManager.nbMonstreApparu);
             }
         }
         
@@ -95,6 +102,8 @@ public class OSCReceiverTest : MonoBehaviour
                 Instantiate(PrefabMiniGolem, spawner.position, spawner.rotation);
                 Debug.Log("854E4F5");
                 timer = cooldown;
+                monsterManager.nbMonstreApparu += 1;
+                Debug.Log(monsterManager.nbMonstreApparu);
             }
         }
         

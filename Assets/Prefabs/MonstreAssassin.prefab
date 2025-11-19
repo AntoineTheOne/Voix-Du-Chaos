@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterInfos: {fileID: 11400000, guid: 3adcfd65393aa6444bf7e18307884e4b, type: 2}
+  monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}
 --- !u!1 &7636808288610863214
 GameObject:
   m_ObjectHideFlags: 0
