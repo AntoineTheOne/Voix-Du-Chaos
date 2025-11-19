@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2441c79940171dc43b33badf9fe97828, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -217,8 +217,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 0}
-  colors: []
-  time: 0
+  sunDiscProperty: _SunDiscColor
+  skyTopProperty: _SkyGradientTop
+  skyBottomProperty: _SkyGradientBottom
+  duration: 5
 --- !u!114 &472462119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,10 +295,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
-  colors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0.22687483, b: 1, a: 0}
-  time: 4
+  sunDiscProperty: _SunDiscColor
+  skyTopProperty: _SkyGradientTop
+  skyBottomProperty: _SkyGradientBottom
+  duration: 5
 --- !u!4 &1951655125
 Transform:
   m_ObjectHideFlags: 0
