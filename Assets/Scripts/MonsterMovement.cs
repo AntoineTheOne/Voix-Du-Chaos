@@ -21,6 +21,10 @@ public class MonsterMovement : MonoBehaviour
     [Header("Detection Ranges")]
     [SerializeField] private float engagementRange = 10f;
 
+
+    [SerializeField] private Animator animator;
+    
+
     private bool isPlayerInRange;
 
     private void Awake()
@@ -82,7 +86,11 @@ public class MonsterMovement : MonoBehaviour
     private void PerformChase()
     {
         if (playerTransform != null)
+        {
             navAgent.SetDestination(playerTransform.position);
+        }
+            
+        animator.SetBool("IsInRange", false);
     }
 
     private void PerformAttack()
@@ -91,6 +99,7 @@ public class MonsterMovement : MonoBehaviour
         Vector3 lookPosition = playerTransform.position;
         lookPosition.y = transform.position.y;
         transform.LookAt(lookPosition);
+        animator.SetBool("IsInRange", true);
 
         if (!isOnAttackCooldown)
         {
