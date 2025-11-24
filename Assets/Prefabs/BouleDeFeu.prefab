@@ -71,11 +71,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3366506415813296465}
   m_SourcePrefab: {fileID: 100100000, guid: 6c0edbbff04643a47be2186a6354293d, type: 3}
---- !u!4 &3711560624412736279 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3641606839357346418, guid: 6c0edbbff04643a47be2186a6354293d, type: 3}
-  m_PrefabInstance: {fileID: 75306210461854053}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8979301690953928734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9049818289167546747, guid: 6c0edbbff04643a47be2186a6354293d, type: 3}
@@ -122,4 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellsInfos: {fileID: 11400000, guid: d0e686def06022249866a8a57d849f00, type: 2}
   prefabExplosion: {fileID: 7616085149908947682, guid: eb1bfe35c5d74ef4996cc9b544ef4107, type: 3}
-  prefabOrigine: {fileID: 3711560624412736279}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  hitOnImpact: 1
