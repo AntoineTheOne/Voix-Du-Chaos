@@ -5,14 +5,17 @@ public class DegatMonstre : MonoBehaviour
     [SerializeField] private SpellsInfos spellsInfos; // Info sur le spell
     [SerializeField] private GameObject prefabExplosion; // prefab une fois la collision du sort avec un monstre pour donner un résultat
     private int nbDeDommage;
-    public LayerMask groundLayer;
-
     [SerializeField] private bool hitOnImpact = false;
 
     void Start()
     {
-        nbDeDommage = spellsInfos.nombreDeDegat;
-    }
+
+      if(spellsInfos != null)
+        {
+          nbDeDommage = spellsInfos.nombreDeDegat;
+        }
+        
+      }
     private void OnCollisionEnter(Collision collision)
     {
       if(prefabExplosion != null)
@@ -23,21 +26,19 @@ public class DegatMonstre : MonoBehaviour
       if (vieEnnemi != null)
       {
         vieEnnemi.PrendreDegats(nbDeDommage);
-        Destroy(gameObject);
+
+            if (!collision.gameObject.CompareTag("Invincible")) // si le sort touché n'a le tag "invicible" fait ceci
+            {
+                Destroy(gameObject);
+            }
+        
       }
 
-      if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
-      {
-        Destroy(gameObject);
-      }
+      
 
       if (hitOnImpact)
       {
         Destroy(gameObject);
       }
-  
-    
-      
-      
     }
 }

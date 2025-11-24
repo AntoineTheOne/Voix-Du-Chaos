@@ -116,6 +116,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellsInfos: {fileID: 11400000, guid: 8926d525405f7d9459ab3dc3c98b597e, type: 2}
+  prefabExplosion: {fileID: 1507819312174135933, guid: 0578de17ba2542c48be44ae42ec205be, type: 3}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  hitOnImpact: 0
 --- !u!54 &-6766488275268320122
 Rigidbody:
   m_ObjectHideFlags: 0
