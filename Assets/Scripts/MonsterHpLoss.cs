@@ -6,21 +6,30 @@ public class MonsterHpLoss : MonoBehaviour
     [SerializeField] private Animator animator; // Animator du le monstre
     private int nbDePv;
 
-    public Slider barDeVieSlider;
+    [SerializeField] private Slider barDeVieSlider;
 
 
     private void Start()
     {
         nbDePv = monsterInfos.nombreDeVie;
 
-        barDeVieSlider.maxValue = nbDePv;
-        barDeVieSlider.value = nbDePv;
+        if(barDeVieSlider != null)
+        {
+            barDeVieSlider.maxValue = nbDePv;
+            barDeVieSlider.value = nbDePv;
+        }
+        
     }
 
     public void PrendreDegats(int amount)
         {
             nbDePv -= amount;
-            barDeVieSlider.value = nbDePv;
+
+            if(barDeVieSlider != null)
+            {
+                barDeVieSlider.value = nbDePv;
+            }
+            
             if (nbDePv <= 0)
             {
                 if(animator != null)
