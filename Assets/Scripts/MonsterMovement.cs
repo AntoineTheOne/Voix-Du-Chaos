@@ -90,7 +90,12 @@ public class MonsterMovement : MonoBehaviour
             navAgent.SetDestination(playerTransform.position);
         }
             
-        animator.SetBool("IsInRange", false);
+        if(animator != null) // fonctionne seulement si il y a un composant animator à l'objet ayant le script
+        {
+            animator.SetBool("IsInRange", false);
+        }
+
+        
     }
 
     private void PerformAttack()
@@ -99,7 +104,13 @@ public class MonsterMovement : MonoBehaviour
         Vector3 lookPosition = playerTransform.position;
         lookPosition.y = transform.position.y;
         transform.LookAt(lookPosition);
-        animator.SetBool("IsInRange", true);
+
+
+        if(animator != null)
+        {
+            animator.SetBool("IsInRange", true);
+        }
+        
 
         if (!isOnAttackCooldown)
         {

@@ -51,7 +51,12 @@ public class SpellSpawner : MonoBehaviour
         message.AddValue(OSCValue.Float(index)); // envoie un float
  
         Debug.Log(message);
-        transmitter.Send(message);
+
+        if(transmitter != null) // fonctionne seulement si il y a un objet ayant l'OSC transmitter dans la scène
+        {
+            transmitter.Send(message);
+        }
+        
 
         if (timer > 0)
         {
