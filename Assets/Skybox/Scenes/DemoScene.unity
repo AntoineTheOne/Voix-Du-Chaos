@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2441c79940171dc43b33badf9fe97828, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 472462117}
   - component: {fileID: 472462116}
   - component: {fileID: 472462119}
-  - component: {fileID: 472462118}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -204,23 +203,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -22.166, y: 15.373001, z: 0}
---- !u!114 &472462118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472462115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f28969c9bd3024db5a254635507dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  sunDiscProperty: _SunDiscColor
-  skyTopProperty: _SkyGradientTop
-  skyBottomProperty: _SkyGradientBottom
-  duration: 5
 --- !u!114 &472462119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,10 +277,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
+  bossPhase: 0
   sunDiscProperty: _SunDiscColor
+  sunHaloProperty: _SunHaloColor
+  horizonLineProperty: _HorizonLineColor
   skyTopProperty: _SkyGradientTop
   skyBottomProperty: _SkyGradientBottom
   duration: 5
+  sunStart: {r: 0.990566, g: 0.9795048, b: 0.873754, a: 1}
+  sunEnd: {r: 0.3396226, g: 0.0227379, b: 0.001601997, a: 1}
+  haloStart: {r: 0.9333334, g: 0.8627452, b: 0.8156863, a: 1}
+  haloEnd: {r: 1, g: 0.5481836, b: 0, a: 1}
+  horizonStart: {r: 0.854902, g: 0.8267749, b: 0.7764707, a: 1}
+  horizonEnd: {r: 0.8676471, g: 0, b: 0.1256586, a: 1}
+  skyTopStart: {r: 0.9433962, g: 0.5971702, b: 0.2536489, a: 1}
+  skyTopEnd: {r: 0.1226415, g: 0.1213383, b: 0.06074223, a: 1}
+  skyBotStart: {r: 0.08454963, g: 0.6709107, b: 0.7169812, a: 1}
+  skyBotEnd: {r: 0.7647059, g: 0.5226884, b: 0.3921568, a: 1}
 --- !u!4 &1951655125
 Transform:
   m_ObjectHideFlags: 0
