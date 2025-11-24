@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7eabde9885f7cd49b15cd775ae8d7bc, type: 3}
   m_Name: MonstreBoss
   m_EditorClassIdentifier: 
-  nombreDeVie: 100
+  nombreDeVie: 300

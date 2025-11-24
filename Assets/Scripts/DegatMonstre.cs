@@ -15,12 +15,10 @@ public class DegatMonstre : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-      
       if(prefabExplosion != null)
-        {
-            GameObject projectile = Instantiate(prefabExplosion, transform.position, transform.rotation);
-            
-        }
+      {
+          GameObject projectile = Instantiate(prefabExplosion, transform.position, transform.rotation);   
+      }
       MonsterHpLoss vieEnnemi = collision.gameObject.GetComponent<MonsterHpLoss>();
       if (vieEnnemi != null)
       {
@@ -29,14 +27,14 @@ public class DegatMonstre : MonoBehaviour
       }
 
       if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
-        {
-          Destroy(gameObject);
-        }
+      {
+        Destroy(gameObject);
+      }
 
-        if (hitOnImpact)
-        {
-            Destroy(gameObject);
-        }
+      if (hitOnImpact)
+      {
+        Destroy(gameObject);
+      }
   
     
       
