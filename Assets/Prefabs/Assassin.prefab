@@ -543,7 +543,7 @@ MonoBehaviour:
     m_Bits: 64
   attackCooldown: 1
   projectileSpeed: 25
-  engagementRange: 6
+  engagementRange: 10
   animator: {fileID: 674380767688179757}
 --- !u!136 &5035140786051718232
 CapsuleCollider:

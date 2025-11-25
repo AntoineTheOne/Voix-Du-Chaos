@@ -544,7 +544,7 @@ MonoBehaviour:
     m_Bits: 64
   attackCooldown: 1
   projectileSpeed: 25
-  engagementRange: 6
+  engagementRange: 10
   animator: {fileID: 8224972363237915241}
 --- !u!95 &8224972363237915241 stripped
 Animator:
