@@ -27,16 +27,14 @@ public class DegatMonstre : MonoBehaviour
       {
         vieEnnemi.PrendreDegats(nbDeDommage);
 
-            if (!collision.gameObject.CompareTag("Invincible")) // si le sort touché n'a le tag "invicible" fait ceci
+            if (!gameObject.CompareTag("Invincible")) // si le sort touché n'a le tag "invicible" fait ceci
             {
                 Destroy(gameObject);
             }
         
       }
 
-      
-
-      if (hitOnImpact)
+      if (hitOnImpact == true)
       {
         Destroy(gameObject);
       }
