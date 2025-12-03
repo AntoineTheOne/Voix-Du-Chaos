@@ -114,7 +114,8 @@ public class MonsterMovement : MonoBehaviour
 
         if (!isOnAttackCooldown)
         {
-            FireProjectile();
+            Invoke("AppelerFireProjectile", attackCooldown);
+           
             StartCoroutine(AttackCooldownRoutine());
         }
     }
@@ -126,5 +127,9 @@ public class MonsterMovement : MonoBehaviour
             PerformAttack();
         else
             PerformChase();
+    }
+
+    private void AppelerFireProjectile(){
+         FireProjectile();
     }
 }

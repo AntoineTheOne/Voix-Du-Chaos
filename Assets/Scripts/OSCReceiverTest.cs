@@ -8,7 +8,7 @@ public class OSCReceiverTest : MonoBehaviour
     [SerializeField] private GameObject PrefabAssassin;
     [SerializeField] private GameObject PrefabGoblin; 
     [SerializeField] private GameObject PrefabGolem;
-    [SerializeField] private GameObject PrefabMiniGolem;
+    [SerializeField] private GameObject PortailEffet;
     [SerializeField] private float cooldown = 2f;
     private float timer = 0f;
     private OSCReceiver receiver;
@@ -25,7 +25,6 @@ public class OSCReceiverTest : MonoBehaviour
         receiver.Bind("/A19EBB5", Assassin);
         receiver.Bind("/9320076", Goblin);
         receiver.Bind("/8CEC54E", Golem);
-        receiver.Bind("/854E4F5", MiniGolem);
         
 
 
@@ -49,6 +48,7 @@ public class OSCReceiverTest : MonoBehaviour
             Instantiate(PrefabAssassin, spawner.position, spawner.rotation);
             Debug.Log("A19EBB5");
             timer = cooldown;
+            Instantiate(PortailEffet, spawner.position, spawner.rotation);
         }
         
     }
@@ -60,6 +60,7 @@ public class OSCReceiverTest : MonoBehaviour
            Instantiate(PrefabGoblin, spawner.position, spawner.rotation);
             Debug.Log("9320076"); 
             timer = cooldown;
+            Instantiate(PortailEffet, spawner.position, spawner.rotation);
         }
         
     }
@@ -71,20 +72,12 @@ public class OSCReceiverTest : MonoBehaviour
             Instantiate(PrefabGolem, spawner.position, spawner.rotation);
             Debug.Log("8CEC54E");
             timer = cooldown;
+            Instantiate(PortailEffet, spawner.position, spawner.rotation);
         }
         
     }
 
-    void MiniGolem(OSCMessage message)
-    {
-        if(timer <= 0)
-        {
-            Instantiate(PrefabMiniGolem, spawner.position, spawner.rotation);
-            Debug.Log("854E4F5");
-            timer = cooldown;
-        }
-        
-    }
+
 
     
 }

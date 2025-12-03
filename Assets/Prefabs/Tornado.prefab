@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5014040256967663504, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
+      propertyPath: m_TagString
+      value: Invincible
+      objectReference: {fileID: 0}
     - target: {fileID: 5742406596221563687, guid: fbef9e46d39828c40b97e5b717d2e0c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.69493
@@ -117,9 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellsInfos: {fileID: 11400000, guid: 8926d525405f7d9459ab3dc3c98b597e, type: 2}
   prefabExplosion: {fileID: 1507819312174135933, guid: 0578de17ba2542c48be44ae42ec205be, type: 3}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
   hitOnImpact: 0
 --- !u!54 &-6766488275268320122
 Rigidbody:
