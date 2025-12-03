@@ -1375,10 +1375,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8525955655661483926, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
-      propertyPath: m_Name
-      value: Earth
-      objectReference: {fileID: 0}
     - target: {fileID: 6655962166411900379, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 127.17768
@@ -1418,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 6655962166411900379, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525955655661483926, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
+      propertyPath: m_Name
+      value: Earth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
