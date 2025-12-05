@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &422658296628759093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 993829540878567049, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3288a641c32639d4a9c446b70e3a3094, type: 2}
+    - target: {fileID: 1738186479191874251, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f6c8f8208962bf44b6f647d90c62b5b, type: 2}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 546.1667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9360812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.031193
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837120049628805037, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470914404209601815, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
+      propertyPath: m_Name
+      value: buisson (4) Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a469e22630fee1f4a8f3d1b2bb14ced9, type: 3}
