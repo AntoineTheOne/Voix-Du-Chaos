@@ -25,6 +25,7 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     
 
+
     private bool isPlayerInRange;
 
     private void Awake()
