@@ -6,6 +6,7 @@ public class DegatMonstre : MonoBehaviour
     [SerializeField] private GameObject prefabExplosion; // prefab une fois la collision du sort avec un monstre pour donner un résultat
     private int nbDeDommage;
     [SerializeField] private bool hitOnImpact = false;
+    [SerializeField] private AudioSource audioexplosion;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class DegatMonstre : MonoBehaviour
       if (vieEnnemi != null)
       {
         vieEnnemi.PrendreDegats(nbDeDommage);
+        audioexplosion.Play();
 
             if (!collision.gameObject.CompareTag("Invincible")) // si le sort touché n'a le tag "invicible" fait ceci
             {

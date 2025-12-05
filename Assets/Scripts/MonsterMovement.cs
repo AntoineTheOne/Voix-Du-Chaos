@@ -23,7 +23,13 @@ public class MonsterMovement : MonoBehaviour
 
 
     [SerializeField] private Animator animator;
+    [Header("Audio")]
+    private AudioSource deathaudio;
+    private AudioSource attackAudio;
+    private AudioSource runAudio;
+
     
+
 
 
     private bool isPlayerInRange;
