@@ -1559,9 +1559,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6848404268514792984, guid: ef6a7c42d2ad434498137b2864fd6a18, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: e3adf7fd9e9571446ba71c53a86f05d3, type: 3}
+  m_Resource: {fileID: 8300000, guid: e3adf7fd9e9571446ba71c53a86f05d3, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1710,9 +1710,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6848404268514792984, guid: ef6a7c42d2ad434498137b2864fd6a18, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 596956e3206ec9a4980b2f3d19655658, type: 3}
+  m_Resource: {fileID: 8300000, guid: 596956e3206ec9a4980b2f3d19655658, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1860,12 +1860,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6848404268514792984, guid: ef6a7c42d2ad434498137b2864fd6a18, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9f56d20586948e946b0c0e01357e853c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9f56d20586948e946b0c0e01357e853c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2821,6 +2821,8 @@ MonoBehaviour:
   projectileSpeed: 25
   engagementRange: 5
   animator: {fileID: 5750344218124347320}
+  attackAudio: {fileID: 4064164226286662426}
+  runAudio: {fileID: 3370262483764068294}
 --- !u!114 &5809172153566286706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2836,6 +2838,7 @@ MonoBehaviour:
   monsterInfos: {fileID: 11400000, guid: fa9da3bbe9d6ca04f827c022c8e6108f, type: 2}
   animator: {fileID: 5750344218124347320}
   barDeVieSlider: {fileID: 4228172470342707549}
+  deathaudio: {fileID: 8804212910159187039}
 --- !u!136 &8823890885023994887
 CapsuleCollider:
   m_ObjectHideFlags: 0

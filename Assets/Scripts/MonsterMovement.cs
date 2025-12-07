@@ -24,9 +24,9 @@ public class MonsterMovement : MonoBehaviour
 
     [SerializeField] private Animator animator;
     [Header("Audio")]
-    private AudioSource deathaudio;
-    private AudioSource attackAudio;
-    private AudioSource runAudio;
+
+     [SerializeField] public AudioSource attackAudio;
+     [SerializeField] public AudioSource runAudio;
 
     
 
@@ -101,6 +101,8 @@ public class MonsterMovement : MonoBehaviour
         {
             animator.SetBool("IsInRange", false);
         }
+    if (runAudio != null && !runAudio.isPlaying)
+        runAudio.Play();
 
         
     }
@@ -117,10 +119,14 @@ public class MonsterMovement : MonoBehaviour
         {
             animator.SetBool("IsInRange", true);
         }
-        
+            if (runAudio != null && runAudio.isPlaying)
+        runAudio.Stop();
+            if (!attackAudio.isPlaying)
+        attackAudio.Play();
 
         if (!isOnAttackCooldown)
         {
+
             FireProjectile();
             StartCoroutine(AttackCooldownRoutine());
         }
