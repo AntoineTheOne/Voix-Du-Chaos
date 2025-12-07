@@ -1828,7 +1828,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8065991836736845325}
   - component: {fileID: 4064164226286662426}
-  - component: {fileID: 6040732937886492736}
   m_Layer: 8
   m_Name: AttackSource
   m_TagString: Untagged
@@ -1863,7 +1862,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6848404268514792984, guid: ef6a7c42d2ad434498137b2864fd6a18, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1948,31 +1947,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6040732937886492736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5816766370000050373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 418537386b5b0b84982cfa953f6a7d9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  randomizePitch: 1
-  pitchRandomRange: 0.2
-  playDelay: 0
-  defaultBank:
-    name: 
-    clips:
-    - {fileID: 8300000, guid: b1492fe5f65bc23409ecbf6d95249dfe, type: 3}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  overrides: []
-  playing: 0
-  canPlay: 0
 --- !u!1 &5913428993331619464
 GameObject:
   m_ObjectHideFlags: 0
