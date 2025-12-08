@@ -5,6 +5,7 @@ public class TimerApparitionBoss : MonoBehaviour
     [SerializeField] private float timerBoss = 300f;
     [SerializeField] private GameObject prefabBoss;
     [SerializeField] private GameObject spawnerBoss;
+    [SerializeField] private SkyboxFade skyboxFadeScript;
     private bool bossSpawned = false;
     void Start()
     {
@@ -24,6 +25,11 @@ public class TimerApparitionBoss : MonoBehaviour
         {
             Instantiate(prefabBoss, spawnerBoss.transform.position, spawnerBoss.transform.rotation);
             bossSpawned = true;
+
+            if(skyboxFadeScript != null){
+                skyboxFadeScript.bossPhase = true;
+            }
+            
         }
     }
 

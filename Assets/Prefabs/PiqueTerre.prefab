@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9191385879273805148}
   m_Layer: 0
   m_Name: PiqueDeTerre
-  m_TagString: Untagged
+  m_TagString: Invincible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,8 +146,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0549927, y: 0.877449, z: 2.0279055}
-  m_Center: {x: 0.028022766, y: 0.14743212, z: 0.0006747246}
+  m_Size: {x: 2.0549927, y: 0.877449, z: 5.238994}
+  m_Center: {x: 0.028022766, y: 0.14743212, z: 1.606219}
 --- !u!114 &1415879305379377762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,9 +298,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5528889777715077604}
   - component: {fileID: 1202336170662048518}
+  - component: {fileID: 6743624607091919907}
   m_Layer: 0
   m_Name: PiqueTerre
-  m_TagString: Untagged
+  m_TagString: Invincible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,3 +340,18 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &6743624607091919907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5322343703892456584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsInfos: {fileID: 0}
+  prefabExplosion: {fileID: 0}
+  hitOnImpact: 0
