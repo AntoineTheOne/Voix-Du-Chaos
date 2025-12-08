@@ -563,8 +563,8 @@ MonoBehaviour:
   projectileSpeed: 25
   engagementRange: 20
   animator: {fileID: 5390927354263498908}
-  attackAudio: {fileID: 0}
-  runAudio: {fileID: 0}
+  attackAudio: {fileID: 8548090791416784580}
+  runAudio: {fileID: 7872326972847705105}
 --- !u!136 &4725782901096593122
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -603,7 +603,7 @@ MonoBehaviour:
   monsterInfos: {fileID: 11400000, guid: 90aa7b01e5569a944a12cabfeb7fd46d, type: 2}
   animator: {fileID: 5390927354263498908}
   barDeVieSlider: {fileID: 0}
-  deathaudio: {fileID: 0}
+  deathaudio: {fileID: 226934846429097737}
 --- !u!4 &2031201537227893478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9db5d9cff4139084abbb285386600f93, type: 3}
