@@ -7,7 +7,8 @@ public class MonsterHpLoss : MonoBehaviour
     private int nbDePv;
 
     [SerializeField] private Slider barDeVieSlider;
-
+    [Header("Audio")]
+    [SerializeField] public AudioSource deathaudio;
 
     private void Start()
     {
@@ -32,6 +33,8 @@ public class MonsterHpLoss : MonoBehaviour
             
             if (nbDePv <= 0)
             {
+                            if (deathaudio != null)
+                deathaudio.Play();
                 if(animator != null)
                     {
                         animator.SetBool("IsDead", true);
