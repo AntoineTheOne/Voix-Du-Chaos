@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype-Sprint-2.unity
     guid: b6b8ea9c8574dcd4f87405f5ce6e5ee2
+  - enabled: 1
+    path: Assets/Scenes/SceneAntoineDaoust.unity
+    guid: f19aa530ae7da084da583b52e825748a
+  - enabled: 1
+    path: Assets/Scenes/SceneJeu.unity
+    guid: a71b6465586a8974c9768f008a37352f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b66e985b7d0f2e445b09e21df84a8711, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
