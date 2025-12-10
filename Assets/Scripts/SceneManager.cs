@@ -13,7 +13,14 @@ public class ChangementScene : MonoBehaviour
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
-    [SerializeField] private string sceneName;
+    [SerializeField] public bool endgame;
+    [SerializeField] public bool victory;
+    [SerializeField] public bool defeat;
+    [SerializeField] private GameObject canvaVictoire;
+    [SerializeField] private GameObject canvaDefeat;
+    [SerializeField] private GameObject canvaEnding;
+    [SerializeField] private string sceneJeu;
+    [SerializeField] private string sceneDepart;
 
 
     void Start()
@@ -27,27 +34,38 @@ public class ChangementScene : MonoBehaviour
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
-         // Get the VideoPlayer component attached to this GameObject
         videoPlayer = GetComponent<VideoPlayer>();
-
-        // Subscribe to the loopPointReached event
         videoPlayer.loopPointReached += OnVideoFinished;
 
+
+        
     }
 
-    // This method is called when the video finishes playing once
+    void Update()
+    {
+        if(endgame == true)
+        {
+            if (victory ==true)
+            {
+                canvaVictoire.SetActive(true);
+            }
+            if (defeat ==true)
+            {
+                canvaDefeat.SetActive(true);
+            }
+            canvaEnding.SetActive(true);
+            Debug.Log("Fin");
+            Invoke("NewGame", 5);
+        }
+    }
+
     void OnVideoFinished(VideoPlayer vp)
     {
         Debug.Log("Video finished playing.");
 
-        // Stop the video playback and clear resources
         vp.Stop();
         
-        // Option B: Disable the entire GameObject (which also stops the video player)
         this.gameObject.SetActive(false);
-        
-        // Option C: Transition to the next action or load a new scene
-        // For example: SceneManager.LoadScene("MainGameScene");
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)
@@ -58,7 +76,15 @@ public class ChangementScene : MonoBehaviour
 
     public void SceneDebut()
     {
-        Debug.Log("csafv");
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("Début");
+        SceneManager.LoadScene(sceneJeu);
     }
+
+    public void NewGame()
+    {
+        Debug.Log("Début");
+        SceneManager.LoadScene(sceneDepart);
+    }
+
+    
 }
