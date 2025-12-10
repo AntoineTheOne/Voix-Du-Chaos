@@ -12,6 +12,7 @@ public class DegatMonstreBouleFeu : MonoBehaviour
     [Header("Burn VFX")]
     [SerializeField] private GameObject prefabBrulure;
     [SerializeField] private float burnVfxLifeTime = 5f; 
+    [SerializeField] private AudioSource audioexplosion;
     private int nbDeDommage;
     private void Start()
     {
@@ -23,6 +24,7 @@ public class DegatMonstreBouleFeu : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        audioexplosion.Play();
         // 1) Spawn VFX
         if (prefabExplosion != null)
         {

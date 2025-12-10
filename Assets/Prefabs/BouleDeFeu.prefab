@@ -45,7 +45,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0601cab3c9da84245923704deff80457, type: 3}
   m_Resource: {fileID: 8300000, guid: 0601cab3c9da84245923704deff80457, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.214
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -173,8 +173,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6848404268514792984, guid: ef6a7c42d2ad434498137b2864fd6a18, type: 2}
   m_audioClip: {fileID: 8300000, guid: 81dc6df781fcdd34eb2c4a52dfa8494a, type: 3}
   m_Resource: {fileID: 8300000, guid: 81dc6df781fcdd34eb2c4a52dfa8494a, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.114
+  m_PlayOnAwake: 0
+  m_Volume: 0.225
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -333,7 +333,7 @@ PrefabInstance:
       addedObject: {fileID: 2418047380411913566}
     - targetCorrespondingSourceObject: {fileID: 9049818289167546747, guid: 6c0edbbff04643a47be2186a6354293d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3366506415813296465}
+      addedObject: {fileID: 1342810943279465694}
   m_SourcePrefab: {fileID: 100100000, guid: 6c0edbbff04643a47be2186a6354293d, type: 3}
 --- !u!4 &3711560624412736279 stripped
 Transform:
@@ -372,7 +372,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3366506415813296465
+--- !u!114 &1342810943279465694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,10 +381,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8979301690953928734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
+  m_Script: {fileID: 11500000, guid: 72e4a11ba034afb4ea5dbf2f07cb2468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spellsInfos: {fileID: 11400000, guid: d0e686def06022249866a8a57d849f00, type: 2}
   prefabExplosion: {fileID: 7616085149908947682, guid: eb1bfe35c5d74ef4996cc9b544ef4107, type: 3}
-  hitOnImpact: 1
+  explosionRadius: 5
+  monsterLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  prefabBrulure: {fileID: 7616085149908947682, guid: 505aa71fe2f76574b84f8592b0b02007, type: 3}
+  burnVfxLifeTime: 5
   audioexplosion: {fileID: 4608415546197490848}
