@@ -1,25 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class MonsterHpLoss : MonoBehaviour
 {
     [SerializeField] private MonsterInfos monsterInfos; // Info sur le monstre
     [SerializeField] private Animator animator; // Animator du le monstre
-    private int nbDePv;
+    [SerializeField] private MonsterManager monsterManager; // Monster manager
 
     [SerializeField] private Slider barDeVieSlider;
     [Header("Audio")]
     [SerializeField] public AudioSource deathaudio;
+    private int nbDePv;
+
 
     private void Start()
     {
         nbDePv = monsterInfos.nombreDeVie;
-
         if(barDeVieSlider != null)
         {
             barDeVieSlider.maxValue = nbDePv;
             barDeVieSlider.value = nbDePv;
         }
-        
     }
 
     public void PrendreDegats(int amount)
@@ -41,6 +42,7 @@ public class MonsterHpLoss : MonoBehaviour
                         Destroy(GetComponent<MonsterMovement>());
                         Destroy(GetComponent<UnityEngine.AI.NavMeshAgent>());
                     }
+                monsterManager.nbMonstreApparu -= 1;
                 Destroy(transform.root.gameObject, 5f);
             }
 

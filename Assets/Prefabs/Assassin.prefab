@@ -1150,5 +1150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterInfos: {fileID: 11400000, guid: 3adcfd65393aa6444bf7e18307884e4b, type: 2}
   animator: {fileID: 674380767688179757}
+  monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}
   barDeVieSlider: {fileID: 1198561516167394237}
   deathaudio: {fileID: 6273844071088587104}

@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: e7005b529730f1445960b9909d0f24b1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spawner: {instanceID: 0}
+  - PrefabAssassin: {instanceID: 0}
+  - PrefabGoblin: {instanceID: 0}
+  - PrefabGolem: {instanceID: 0}
+  - PortailEffet: {fileID: 4301169051803062262, guid: ebfe022235c63b042924e1192699ed84, type: 3}
+  - monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

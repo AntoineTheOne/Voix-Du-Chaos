@@ -1178,6 +1178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterInfos: {fileID: 11400000, guid: 90aa7b01e5569a944a12cabfeb7fd46d, type: 2}
   animator: {fileID: 5390927354263498908}
+  monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}
   barDeVieSlider: {fileID: 4437516603900123448}
   deathaudio: {fileID: 628960067398029673}
 --- !u!4 &2031201537227893478 stripped
