@@ -34,7 +34,7 @@ MonoBehaviour:
     x: 264
     y: 462
     width: 474
-    height: 2210
+    height: 2206
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -661,7 +661,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-462981019419857548,"guid":"944cbd61d04cb1341a14afe321fa580f","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":-462981019419857548,"guid":"edf778bc50037294f9f861ddf76643db","type":3}}'
     m_Space: -1
   m_Property:
     name: mesh
@@ -1000,7 +1000,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 23.72
     m_Space: -1
   m_Property:
     name: _Size
