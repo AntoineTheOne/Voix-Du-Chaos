@@ -27,7 +27,13 @@ public class DegatMonstre : MonoBehaviour
       if (vieEnnemi != null)
       {
         vieEnnemi.PrendreDegats(nbDeDommage);
-        audioexplosion.Play();
+
+
+        if (audioexplosion != null)
+            {
+                audioexplosion.Play();
+            }
+        
 
             if (!gameObject.CompareTag("Invincible")) // si le sort touché n'a le tag "invicible" fait ceci
             {

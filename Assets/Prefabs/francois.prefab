@@ -1121,7 +1121,7 @@ Transform:
   m_GameObject: {fileID: 3778204824423157197}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.86, z: 2.62}
+  m_LocalPosition: {x: 0, y: 3.86, z: 2.26}
   m_LocalScale: {x: 2.3025029, y: 2.3025029, z: 2.3025029}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2813,13 +2813,13 @@ MonoBehaviour:
   navAgent: {fileID: 0}
   playerTransform: {fileID: 0}
   firePoint: {fileID: 5828849839597298573}
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 5920868775550304138, guid: 2f097fffd07501b499db3e736700e22e, type: 3}
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 1
+  attackCooldown: 10
   projectileSpeed: 25
-  engagementRange: 10
+  engagementRange: 5
   animator: {fileID: 5750344218124347320}
   attackAudio: {fileID: 4064164226286662426}
   runAudio: {fileID: 3370262483764068294}
