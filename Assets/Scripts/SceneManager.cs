@@ -14,8 +14,12 @@ public class ChangementScene : MonoBehaviour
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
     [SerializeField] public bool endgame;
+    [SerializeField] private bool endgameTriggered = false;
     [SerializeField] public bool victory;
     [SerializeField] public bool defeat;
+
+    [SerializeField] private GameObject healthBar;
+    [SerializeField] private GameObject opening;
     [SerializeField] private GameObject canvaVictoire;
     [SerializeField] private GameObject canvaDefeat;
     [SerializeField] private GameObject canvaEnding;
@@ -34,7 +38,7 @@ public class ChangementScene : MonoBehaviour
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
-        videoPlayer = GetComponent<VideoPlayer>();
+        videoPlayer = opening.GetComponent<VideoPlayer>();
         videoPlayer.loopPointReached += OnVideoFinished;
 
 
@@ -43,8 +47,9 @@ public class ChangementScene : MonoBehaviour
 
     void Update()
     {
-        if(endgame == true)
+        if(endgame && !endgameTriggered)
         {
+            endgameTriggered = true;
             if (victory ==true)
             {
                 canvaVictoire.SetActive(true);
@@ -53,19 +58,22 @@ public class ChangementScene : MonoBehaviour
             {
                 canvaDefeat.SetActive(true);
             }
-            canvaEnding.SetActive(true);
-            Debug.Log("Fin");
-            Invoke("NewGame", 5);
+            
+            Invoke("ShowEndingCanvas", 8f);
+            Invoke("NewGame", 10);
         }
+    }
+
+    void ShowEndingCanvas()
+    {
+        canvaEnding.SetActive(true);
     }
 
     void OnVideoFinished(VideoPlayer vp)
     {
-        Debug.Log("Video finished playing.");
-
         vp.Stop();
-        
-        this.gameObject.SetActive(false);
+        opening.SetActive(false);
+        healthBar.SetActive(true);
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)
