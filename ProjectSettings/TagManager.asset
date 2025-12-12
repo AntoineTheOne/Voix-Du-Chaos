@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Monster
   - Invincible
+  - Projectile
   layers:
   - Default
   - TransparentFX

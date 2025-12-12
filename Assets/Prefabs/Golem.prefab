@@ -1131,7 +1131,7 @@ MonoBehaviour:
   navAgent: {fileID: 0}
   playerTransform: {fileID: 0}
   firePoint: {fileID: 6648465393503528462}
-  projectilePrefab: {fileID: 8775232481345772502, guid: ca0531ba04d896149b5618d387e0fa14, type: 3}
+  projectilePrefab: {fileID: 8775232481345772502, guid: 7860687f457264849950930659438be9, type: 3}
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
