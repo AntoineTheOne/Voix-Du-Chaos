@@ -825,6 +825,7 @@ GameObject:
   - component: {fileID: 2539619991323337315}
   - component: {fileID: 909441827985281856}
   - component: {fileID: 8921452540077471025}
+  - component: {fileID: 8987111836170079313}
   m_Layer: 8
   m_Name: Assassin2
   m_TagString: Untagged
@@ -856,6 +857,7 @@ Transform:
   - {fileID: 6216660107057923610}
   - {fileID: 7927400427617622202}
   - {fileID: 3135395870111207382}
+  - {fileID: 1854143052607925285}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1996233725050274100
@@ -916,7 +918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
   playerTransform: {fileID: 0}
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 1854143052607925285}
   projectilePrefab: {fileID: 1919820426534048525, guid: ea53b0c2baba58a40803d524e406aa73, type: 3}
   playerLayerMask:
     serializedVersion: 2
@@ -942,8 +944,31 @@ MonoBehaviour:
   monsterInfos: {fileID: 11400000, guid: 3adcfd65393aa6444bf7e18307884e4b, type: 2}
   animator: {fileID: 1996233725050274100}
   monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}
-  barDeVieSlider: {fileID: 0}
+  barDeVieSlider: {fileID: 8932984483663258163}
   deathaudio: {fileID: 346414322572940200}
+--- !u!136 &8987111836170079313
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134932151948177116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.3425155
+  m_Height: 6.8941665
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.9470832, z: -0.049565315}
 --- !u!1 &2190055871785962887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,7 +2024,7 @@ GameObject:
   - component: {fileID: 1414276390078773972}
   - component: {fileID: 49445638617665382}
   m_Layer: 8
-  m_Name: BarDeVie (1)
+  m_Name: BarDeVie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3683,6 +3708,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8428152674435139379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854143052607925285}
+  m_Layer: 8
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854143052607925285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8428152674435139379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.15, z: 1.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1651446499812193382}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8513770557620883689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,7 +3827,7 @@ Transform:
   m_GameObject: {fileID: 9017426854386759609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 1.658622, z: -4.433904}
+  m_LocalPosition: {x: 0, y: 3.25, z: 0}
   m_LocalScale: {x: 1.9460553, y: 1.9460553, z: 1.9460553}
   m_ConstrainProportionsScale: 0
   m_Children:
