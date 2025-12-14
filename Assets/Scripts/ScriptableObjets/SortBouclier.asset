@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9dc4ba643b417418acf8e46b64c6c5, type: 3}
   m_Name: SortBouclier
   m_EditorClassIdentifier: 
-  nombreDeDegat: 100
+  nombreDeDegat: 0
