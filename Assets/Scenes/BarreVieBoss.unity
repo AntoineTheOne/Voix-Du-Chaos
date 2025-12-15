@@ -182,6 +182,7 @@ MonoBehaviour:
   timerBoss: 5
   prefabBoss: {fileID: 9200035191623609323, guid: 2dc2a8c31cf801c46b0c34e0b6c86f0e, type: 3}
   spawnerBoss: {fileID: 302632777}
+  skyboxFadeScript: {fileID: 0}
 --- !u!4 &302632779
 Transform:
   m_ObjectHideFlags: 0

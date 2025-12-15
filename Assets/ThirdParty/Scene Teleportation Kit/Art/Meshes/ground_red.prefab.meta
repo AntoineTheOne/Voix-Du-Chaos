@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 04822b2977ffac24cac24cf1212ac1ec
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Art/Meshes/ground_red.prefab
+  uploadId: 462286

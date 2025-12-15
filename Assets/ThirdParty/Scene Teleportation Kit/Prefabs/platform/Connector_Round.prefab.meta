@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ee3e3c8068f2c7e4bb9e4465af5206bb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Connector_Round.prefab
+  uploadId: 462286

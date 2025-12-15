@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 74427d55bbb131a42a455163ffdeabe3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Disc_Orange.prefab
+  uploadId: 462286

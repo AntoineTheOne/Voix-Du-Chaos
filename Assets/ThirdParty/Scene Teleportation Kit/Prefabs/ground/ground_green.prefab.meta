@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10db2c2f5ad0be14baf03b992615c123
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/ground/ground_green.prefab
+  uploadId: 462286

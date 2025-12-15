@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: affc7a7e9a875b945981987cbfc81a1e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Disc_Yellow.prefab
+  uploadId: 462286

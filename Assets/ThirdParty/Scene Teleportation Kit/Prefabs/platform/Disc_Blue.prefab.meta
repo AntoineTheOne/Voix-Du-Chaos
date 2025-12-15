@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3107b0e11fcf98e46bb443ff78f734d8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Disc_Blue.prefab
+  uploadId: 462286

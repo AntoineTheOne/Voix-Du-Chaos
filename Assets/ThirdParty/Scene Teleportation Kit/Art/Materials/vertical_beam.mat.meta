@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e443f3b021617145953f78ac69bf130
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Art/Materials/vertical_beam.mat
+  uploadId: 462286

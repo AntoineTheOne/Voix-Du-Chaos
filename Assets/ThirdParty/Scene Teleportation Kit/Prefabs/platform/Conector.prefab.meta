@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb0f5a950a0cde746b60e7118bcd31f5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Conector.prefab
+  uploadId: 462286

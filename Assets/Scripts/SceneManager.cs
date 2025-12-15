@@ -13,6 +13,7 @@ public class ChangementScene : MonoBehaviour
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
+    [SerializeField] private bool dictionaryCommandCreated;
     [SerializeField] public bool endgame;
     [SerializeField] private bool endgameTriggered = false;
     [SerializeField] public bool victory;
@@ -29,7 +30,9 @@ public class ChangementScene : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(PhraseRecognitionSystem.isSupported);
+        if (dictionaryCommandCreated != false)
+        {
+            Debug.Log(PhraseRecognitionSystem.isSupported);
         actions.Add("ouverture du portail", SceneDebut);
         actions.Add("ouverture", SceneDebut);
         actions.Add("portail", SceneDebut);
@@ -37,6 +40,8 @@ public class ChangementScene : MonoBehaviour
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
+        }
+        
 
         if (opening != null)
         {

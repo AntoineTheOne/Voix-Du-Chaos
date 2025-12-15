@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6b17dfed605145f40b7e9b65eee43d5a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Art/Meshes/ground_yellow.prefab
+  uploadId: 462286

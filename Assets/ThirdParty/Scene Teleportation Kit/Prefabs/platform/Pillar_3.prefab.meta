@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 34e7a7d8e6230f6409ae318174aadf89
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Pillar_3.prefab
+  uploadId: 462286

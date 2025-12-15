@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b430e53205963894e9648a8f417340d2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Platform.prefab
+  uploadId: 462286

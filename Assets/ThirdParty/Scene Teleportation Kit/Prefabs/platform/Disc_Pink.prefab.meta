@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0455d3a3f82f49a49a7c5ed5b6d051f1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Disc_Pink.prefab
+  uploadId: 462286

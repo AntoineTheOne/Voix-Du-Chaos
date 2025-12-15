@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa03a0c5397614643a2d7f6f0f05b88f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Art/Materials/portal_material_blue.mat
+  uploadId: 462286

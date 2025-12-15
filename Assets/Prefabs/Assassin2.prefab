@@ -941,6 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbccbd2d95b63342b0a60d39c2ea251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changementScene: {fileID: 0}
   monsterInfos: {fileID: 11400000, guid: 3adcfd65393aa6444bf7e18307884e4b, type: 2}
   animator: {fileID: 1996233725050274100}
   monsterManager: {fileID: 11400000, guid: 0a57c6d9a3ef6fe4d8f15dba1452a0d0, type: 2}

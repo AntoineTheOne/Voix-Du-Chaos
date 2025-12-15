@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bd549e8f401958e4e95f46d1bdec1bad
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202903
+  packageName: Scene Teleportation
+  packageVersion: 1.0
+  assetPath: Assets/Scene Teleportation Kit/Prefabs/platform/Disc_Purple.prefab
+  uploadId: 462286
