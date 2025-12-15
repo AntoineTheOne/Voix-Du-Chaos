@@ -23,7 +23,6 @@ public class SpellSpawner : MonoBehaviour
     [SerializeField] private float projectileSpawnDistance = 2f;
     [SerializeField] private float wallSpawnDistance = 5f;
     [SerializeField] private float projectileSpeed = 10f;
-
     [SerializeField] private float index = 10f;
     private float timer = 0f;
 
