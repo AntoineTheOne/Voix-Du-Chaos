@@ -13,7 +13,18 @@ public class ChangementScene : MonoBehaviour
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
-    [SerializeField] private string sceneName;
+    [SerializeField] public bool endgame;
+    [SerializeField] private bool endgameTriggered = false;
+    [SerializeField] public bool victory;
+    [SerializeField] public bool defeat;
+
+    [SerializeField] private GameObject healthBar;
+    [SerializeField] private GameObject opening;
+    [SerializeField] private GameObject canvaVictoire;
+    [SerializeField] private GameObject canvaDefeat;
+    [SerializeField] private GameObject canvaEnding;
+    [SerializeField] private string sceneJeu;
+    [SerializeField] private string sceneDepart;
 
 
     void Start()
@@ -27,27 +38,42 @@ public class ChangementScene : MonoBehaviour
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
-         // Get the VideoPlayer component attached to this GameObject
-        videoPlayer = GetComponent<VideoPlayer>();
-
-        // Subscribe to the loopPointReached event
+        videoPlayer = opening.GetComponent<VideoPlayer>();
         videoPlayer.loopPointReached += OnVideoFinished;
 
+
+        
     }
 
-    // This method is called when the video finishes playing once
+    void Update()
+    {
+        if(endgame && !endgameTriggered)
+        {
+            endgameTriggered = true;
+            if (victory ==true)
+            {
+                canvaVictoire.SetActive(true);
+            }
+            if (defeat ==true)
+            {
+                canvaDefeat.SetActive(true);
+            }
+            
+            Invoke("ShowEndingCanvas", 8f);
+            Invoke("NewGame", 10);
+        }
+    }
+
+    void ShowEndingCanvas()
+    {
+        canvaEnding.SetActive(true);
+    }
+
     void OnVideoFinished(VideoPlayer vp)
     {
-        Debug.Log("Video finished playing.");
-
-        // Stop the video playback and clear resources
         vp.Stop();
-        
-        // Option B: Disable the entire GameObject (which also stops the video player)
-        this.gameObject.SetActive(false);
-        
-        // Option C: Transition to the next action or load a new scene
-        // For example: SceneManager.LoadScene("MainGameScene");
+        opening.SetActive(false);
+        healthBar.SetActive(true);
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)
@@ -58,7 +84,15 @@ public class ChangementScene : MonoBehaviour
 
     public void SceneDebut()
     {
-        Debug.Log("csafv");
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("Début");
+        SceneManager.LoadScene(sceneJeu);
     }
+
+    public void NewGame()
+    {
+        Debug.Log("Début");
+        SceneManager.LoadScene(sceneDepart);
+    }
+
+    
 }
