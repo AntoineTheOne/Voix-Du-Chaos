@@ -23,7 +23,7 @@ public class TimerApparitionBoss : MonoBehaviour
         }
         if(timerBoss <= 0 && bossSpawned == false)
         {
-            Instantiate(prefabBoss, spawnerBoss.transform.position, spawnerBoss.transform.rotation);
+            prefabBoss.SetActive(true);
             bossSpawned = true;
 
             if(skyboxFadeScript != null){
