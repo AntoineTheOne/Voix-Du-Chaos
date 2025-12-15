@@ -2587,8 +2587,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endgame: 0
+  endgameTriggered: 0
   victory: 0
   defeat: 0
+  healthBar: {fileID: 0}
+  opening: {fileID: 601504334}
   canvaVictoire: {fileID: 287321917}
   canvaDefeat: {fileID: 1976161383}
   canvaEnding: {fileID: 1195634899}

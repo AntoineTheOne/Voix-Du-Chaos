@@ -38,8 +38,13 @@ public class ChangementScene : MonoBehaviour
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
-        videoPlayer = opening.GetComponent<VideoPlayer>();
-        videoPlayer.loopPointReached += OnVideoFinished;
+        if (opening != null)
+        {
+            videoPlayer = opening.GetComponent<VideoPlayer>();
+            videoPlayer.loopPointReached += OnVideoFinished;
+        }
+        
+        
 
 
         
@@ -72,8 +77,16 @@ public class ChangementScene : MonoBehaviour
     void OnVideoFinished(VideoPlayer vp)
     {
         vp.Stop();
-        opening.SetActive(false);
-        healthBar.SetActive(true);
+        if(opening != null)
+        {
+            opening.SetActive(false);
+        }
+        
+        if(healthBar != null)
+        {
+            healthBar.SetActive(true);
+        }
+        
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)
