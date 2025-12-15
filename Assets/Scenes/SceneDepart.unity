@@ -1291,7 +1291,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766408121}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2b9bb8e6bc21d5c43becbe19aa74a547, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 76e4bb12913173d4bb5ce62ee7252c94, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.80784315}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.94509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1918,7 +1918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vise les ennemis avec ton baton.
+  m_text: Vise les ennemis avec ton baton magique.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2363,7 +2363,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008446773}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f75a322386eaf8c47bc0c242b403c1f5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 59c75b5799bfab447bb13a4d7551c2a6, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
