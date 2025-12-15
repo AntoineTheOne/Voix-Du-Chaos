@@ -942,7 +942,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380995949}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f75a322386eaf8c47bc0c242b403c1f5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 59c75b5799bfab447bb13a4d7551c2a6, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4745,6 +4745,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d3a5e856d6d14c47bf953e56688b239, type: 3}
+--- !u!1001 &1573455915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 554.1371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1766033
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.187775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651446499812193382, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134932151948177116, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_Name
+      value: Assassin2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441221760195894712, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441221760195894712, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5acfcb0cd4b7f048a97eec60cd0d80d, type: 3}
 --- !u!1 &1591066122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5749,7 +5814,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892295625}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2b9bb8e6bc21d5c43becbe19aa74a547, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 76e4bb12913173d4bb5ce62ee7252c94, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6338,3 +6403,4 @@ SceneRoots:
   - {fileID: 510602065}
   - {fileID: 351662799}
   - {fileID: 1407266934}
+  - {fileID: 1573455915}
