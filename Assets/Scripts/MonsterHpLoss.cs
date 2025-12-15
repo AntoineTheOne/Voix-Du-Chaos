@@ -47,8 +47,12 @@ public class MonsterHpLoss : MonoBehaviour
                 if (gameObject.name == "francois")
                 {
                     barDeVieSlider.gameObject.SetActive(false);
-                    changementScene.victory = true;
-                    changementScene.endgame = true;
+                    if(changementScene != null)
+                        {
+                            changementScene.victory = true;
+                            changementScene.endgame = true;
+                        }
+                    
                     GameObject[] monsters = GameObject.FindGameObjectsWithTag("Monster");
 
                     foreach (GameObject monster in monsters)

@@ -48,9 +48,13 @@ public class PlayerHitHpLoss : MonoBehaviour
             barDeVieSlider.value = 0;
 
              barDeVieSlider.gameObject.SetActive(false);
-            
-            changementScene.defeat = true;
+
+            if (changementScene)
+            {
+                changementScene.defeat = true;
             changementScene.endgame = true;
+            }
+            
 
             DisableAllEnemies();
 
