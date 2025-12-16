@@ -2954,9 +2954,9 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 10
+  attackCooldown: 4
   projectileSpeed: 25
-  engagementRange: 10
+  engagementRange: 15
   animator: {fileID: 5750344218124347320}
   attackAudio: {fileID: 4064164226286662426}
   runAudio: {fileID: 3370262483764068294}
