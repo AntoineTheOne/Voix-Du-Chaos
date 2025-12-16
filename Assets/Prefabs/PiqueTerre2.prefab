@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e40613e764841c4481bcfd9fcc61517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellsInfos: {fileID: 0}
+  spellsInfos: {fileID: 11400000, guid: 2e43196159d203c4a83bdcaebc8bca30, type: 2}
   prefabExplosion: {fileID: 0}
   hitOnImpact: 0
   audioexplosion: {fileID: 0}
@@ -203,6 +203,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8525955655661483926, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1588868497230954392}
+    - targetCorrespondingSourceObject: {fileID: 8525955655661483926, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8344776820176437259}
   m_SourcePrefab: {fileID: 100100000, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}
 --- !u!1 &800141373061693503 stripped
 GameObject:
@@ -391,6 +394,28 @@ MonoBehaviour:
   overrides: []
   playing: 0
   canPlay: 0
+--- !u!95 &8344776820176437259
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800141373061693503}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1f18386b167967438e7f149b3b27fb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &2384182639892054642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6655962166411900379, guid: be2631c1d80d6fc40a79c8b8a84d1b85, type: 3}

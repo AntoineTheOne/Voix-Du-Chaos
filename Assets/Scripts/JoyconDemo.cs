@@ -87,12 +87,12 @@ orientation = convert * orientation;
 transform.rotation = orientation;
 
 
-			if (j.GetButton(Joycon.Button.DPAD_UP)){
-				gameObject.GetComponent<Renderer>().material.color = Color.red;
-			} else{
-				gameObject.GetComponent<Renderer>().material.color = Color.blue;
-			}
-            cube.transform.rotation = orientation;
+			//if (j.GetButton(Joycon.Button.DPAD_UP)){
+			//	gameObject.GetComponent<Renderer>().material.color = Color.red;
+			//} else{
+			//	gameObject.GetComponent<Renderer>().material.color = Color.blue;
+			//}
+            //cube.transform.rotation = orientation;
 					
 			
         }

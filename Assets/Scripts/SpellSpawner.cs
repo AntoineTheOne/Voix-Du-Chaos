@@ -30,11 +30,43 @@ public class SpellSpawner : MonoBehaviour
     {
         Debug.Log(PhraseRecognitionSystem.isSupported);
         actions.Add("boule de feu", BouleFeu);
+        actions.Add("boule feu", BouleFeu);
+        actions.Add("bouledefeu", BouleFeu);
+        actions.Add("boule de feu boule de feu boule de feu", BouleFeu);
+        actions.Add("boule de feu boule de feu", BouleFeu);
+        actions.Add("boule", BouleFeu);
+        actions.Add("boulefeu", BouleFeu);
+        actions.Add("boule de", BouleFeu);
+        actions.Add("tornade d'eau", Tornado);
+        actions.Add("tornade de d'eau", Tornado);
+        actions.Add("tornade", Tornado);
+        actions.Add("tournado", Tornado);
+        actions.Add("tournade", Tornado);
+        actions.Add("tournade de d'eau", Tornado);
+        actions.Add("tournade d'eau", Tornado);
         actions.Add("tornado", Tornado);
         actions.Add("pique de terre", PiqueTerre);
+        actions.Add("pique deterre", PiqueTerre);
+        actions.Add("pique terre", PiqueTerre);
+        actions.Add("pique", PiqueTerre);
+        actions.Add("pi de terre", PiqueTerre);
+        actions.Add("pide terre", PiqueTerre);
         actions.Add("laser électrique", Laser);
+        actions.Add("lasere ", Laser);
+        actions.Add("lasère ", Laser);
         actions.Add("laser", Laser);
+        actions.Add("lasaire", Laser);
+        actions.Add("lazer", Laser);
+        actions.Add("lasor", Laser);
+        actions.Add("lazor", Laser);
+        actions.Add("lézard", Laser);
         actions.Add("bouclier", Bouclier);
+        actions.Add("boucle lier", Bouclier);
+        actions.Add("boucliier", Bouclier);
+        actions.Add("boucle ier", Bouclier);
+        actions.Add("boucier", Bouclier);
+        actions.Add("bouquier", Bouclier);
+
 
 
 
