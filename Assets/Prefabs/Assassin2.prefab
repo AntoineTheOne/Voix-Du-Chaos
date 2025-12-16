@@ -843,8 +843,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.532, y: 0.4602, z: -17.062}
-  m_LocalScale: {x: 0.47752494, y: 0.47752494, z: 0.47752494}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7186087834286888692}
   - {fileID: 6284224481062008612}
@@ -2860,7 +2860,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a312f2cbd41078f4e850294319ca9317, type: 3}
   m_Resource: {fileID: 8300000, guid: a312f2cbd41078f4e850294319ca9317, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.311
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
